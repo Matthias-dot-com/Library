@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="header">
+          <ul>
+            <li class="list-item1"><a href="#">Home</a></li>
+            <li class="list-item2"><a href="#">Books</a></li>
+            <li class="list-item5"><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="button">
+          <input type="submit" value="add" />
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="books">
+
+      </div>
+    </section>
+    <dialog id="newdialog">
+      <h2>Welcome to Book Store</h2>
+      <form method="dialog" class="myForm">
+        <label for="title"> Title:  
+        <input type="text" name="title" id="title">
+    </label><br><br>
+    <label for="author"> Author:
+        <input type="text" name="author" id="author">
+    </label><br><br>
+    <label for="pages"> Pages:
+        <input type="text" name="pages" id="pages">
+    </label><br><br>
+    <label for="status"> Status:
+        <input type="text" name="status" id="status">
+    </label><br><br>
+    <label for="rating"> Rating:
+      <div class="star-rating">
+        <input type="radio" name="rating" id="rating-5" value="5"><label for="rating-5">&#9733;</label>
+        <input type="radio" name="rating" id="rating-4" value="4"><label for="rating-4">&#9733;</label>
+        <input type="radio" name="rating" id="rating-3" value="3"><label for="rating-3">&#9733;</label>
+        <input type="radio" name="rating" id="rating-2" value="2"><label for="rating-2">&#9733;</label>
+        <input type="radio" name="rating" id="rating-1" value="1"><label for="rating-1">&#9733;</label>
+    </div>    </label><br><br>
+    <input type="submit" value="add" id="add">
+      </form>
+    </dialog>
+  </body>
+  <script src="script.js" async></script>
+</html>
