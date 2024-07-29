@@ -118,3 +118,7 @@ dialog::before {
     display: flex;
     justify-content: flex-end;
 }
+
+.book p{
+    padding: 5px;
+}
