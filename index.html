@@ -32,14 +32,13 @@
           <input
             type="text"
             name="title"
-            required
-            minlength="1"
+           
             id="title"
           /> </label
         ><br /><br />
         <label for="author">
           Author:
-          <input type="text" name="author" id="author" /> </label
+          <input type="text" required minlength="1" name="author" id="author" /> </label
         ><br /><br />
         <label for="pages">
           Pages:
@@ -54,8 +53,9 @@
         ><br /><br />
         <label for="status">
           Status:
-          <select type="select" name="status" id="status">
+          <select type="select" required name="status" id="status">
             <option value="read">Read</option>
+            <option value="in progress">In progress</option>
             <option value="unread">Unread</option>
           </select> </label
         ><br /><br />
@@ -63,23 +63,23 @@
          
           <div class="star-rating">
 
-           Rating:  <input type="radio" name="rating" id="rating-5" value="1" /><label
+           Rating:  <input type="radio" required name="rating" id="rating-5" value="1" /><label
               for="rating-1"
               >&#9733;</label
             >
-            <input type="radio" name="rating" id="rating-4" value="2" /><label
+            <input type="radio" required name="rating" id="rating-4" value="2" /><label
               for="rating-2"
               >&#9733;</label
             >
-            <input type="radio" name="rating" id="rating-3" value="3" /><label
+            <input type="radio" required name="rating" id="rating-3" value="3" /><label
               for="rating-3"
               >&#9733;</label
             >
-            <input type="radio" name="rating" id="rating-2" value="4" /><label
+            <input type="radio" required name="rating" id="rating-2" value="4" /><label
               for="rating-4"
               >&#9733;</label
             >
-            <input type="radio" name="rating" id="rating-1" value="5" /><label
+            <input type="radio" required name="rating" id="rating-1" value="5" /><label
               for="rating-5"
               >&#9733;</label
             >
