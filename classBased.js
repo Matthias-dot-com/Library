@@ -3,6 +3,13 @@ const button = document.querySelector("input");
 const dialog = document.querySelector("dialog");
 const add = document.querySelector("#add");
 const formInputs = document.querySelectorAll("form input");
+const formSelect = document.querySelector("form select");
+// // Validation DOM
+// const Title = document.querySelector("form [name=\"title\"]");
+// const Author = document.querySelector("form [name=\"author\"]")
+// const Pages = document.querySelector("form [name=\"pages\"]")
+// const Status = document.querySelector("form [name=\"status\"]")
+// const Rating = document.querySelector("form [name=\"rating\"]:checked")
 
 class Book {
   constructor(title, author, pages, status, rating) {
@@ -50,7 +57,8 @@ add.addEventListener("submit", (event) => {
 });
 
 dialog.addEventListener("close", () => {
-  const [title, author, pages, status, rating] = Array.from(formInputs).map(input => input.value);
+  const [title, author, pages, rating] = Array.from(formInputs).map(input => input.value);
+  const status = formSelect.value;
   const book = new Book(title, author, pages, status, document.querySelector("input[name='rating']:checked")?.value || "");
   book.createBookElement();
   clearFormInputs();
@@ -64,5 +72,6 @@ function clearFormInputs() {
       input.checked = false;
     }
   });
+  formSelect.value ="";
 }
 
